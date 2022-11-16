@@ -1,47 +1,65 @@
-# Svelte + Vite
+# JS Framework Comparative Analysis
 
-This template should help get you started developing with Svelte in Vite.
+## Framework Name Svelt
 
-## Recommended IDE Setup
+### Research Conducted By: 
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+- Hayden Cleaver
+- Kris Dunning
+- Isaiah Keller
 
-## Need an official Svelte framework?
+### Overall Score and Comments
+#### Score (Out of 10): 7
+#### General Comments
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+- ADD COMMENTS
 
-## Technical considerations
+#### Pros
+* Great documentation
+* Item 2
 
-**Why use this over SvelteKit?**
+#### Cons
+* Item 1
+* Item 2
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+### Ratings and Reviews
+#### Documentation
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+Thoughts go here
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+#### Systems Requirements
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+Svelte can be used with AWS
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
 
-**Why include `.vscode/extensions.json`?**
+**Core Dependencies**
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+- @sveltejs/vite-plugin-svelte
+- svelte
+- vite
 
-**Why enable `checkJs` in the JS template?**
+#### Ramp-Up Projections
 
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
+How long would/should it take a team of mid-junior developers to become productive?
+  - Svelte seems very easy to use.  A team of mid-junior level developers should be productive in under 2 weeks.
 
-**Why is HMR not preserving my local component state?**
+#### Community Support and Adoption levels
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
+- [Companies using Svelte](https://stackshare.io/svelte): No large easily recognizable companies are currently using Svelte.
+- [Popularity](https://npmtrends.com/angular-vs-svelte-vs-vue): Of the 3 frameworks compared here, Angular, Svelte, and Vue, Svelte is the least popular and the youngest at 6 years.  There is an active group of developers supporting Svelte; the last update was 5 days prior to this writing (11/15/22).
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+### Links and Resources
 
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+* [Svelte Framework](https://svelte.dev/)
+* [Svelte Docs](https://svelte.dev/docs)
+* [Svelte Media Examples](https://svelte.dev/examples/media-elements)
+* [npmjs svelte](https://www.npmjs.com/package/svelte)
+
+### Code Demos
+
+* [Github Repository](https://github.com/SvelteDemo/svelteDemo)
+
+### Operating Instructions
+
+- **npm i**
+- **npm run dev**
