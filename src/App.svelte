@@ -1,6 +1,8 @@
 <script>
   import svelteLogo from './assets/svelte.svg'
   import Counter from './lib/Counter.svelte'
+  import KrisPage from './kris.svelte';
+
 </script>
 
 <main>
@@ -17,7 +19,12 @@
   <div class="card">
     <Counter />
   </div>
-
+  <div class="kris_page">
+    <button>
+      Show Kris Page
+    </button>
+    <KrisPage />
+  </div>
   <p>
     Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
   </p>
