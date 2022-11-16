@@ -59,12 +59,16 @@
 
 </script>
 
+<h1>Music Sample</h1>
+	
+<button on:click={audioToggle}>{audioPlay ? `Stop Audio` : `Play Audio`}</button>
+
 <h1>Landscape Video</h1>
 
-<!-- <div> -->
-	<!-- <video
-		poster="/Pines.png"
-		src="/Pines.mov"
+<div>
+	<video
+		poster="/Forest.png"
+		src="/Forest.mov"
 		on:mousemove={handleMove}
 		on:touchmove|preventDefault={handleMove}
 		on:mousedown={handleMousedown}
@@ -73,9 +77,9 @@
 		bind:duration
 		bind:paused>
 		<track kind="captions">
-	</video> -->
+	</video>
 
-	<!-- <div class="controls" style="opacity: {duration && showControls ? 1 : 0}">
+<div class="controls" style="opacity: {duration && showControls ? 1 : 0}">
 		<progress value="{(time / duration) || 0}"/>
 
 		<div class="info">
@@ -83,11 +87,7 @@
 			<span class="time">{format(duration)}</span>
 		</div>
 	</div>
-</div> -->
-
-<h1>Music Sample</h1>
-	
-<button on:click={audioToggle}>{audioPlay ? `Stop Audio` : `Play Audio`}</button>
+</div>
 
 <style>
 	div {
@@ -124,7 +124,7 @@
 	progress {
 		display: block;
 		width: 100%;
-		height: 10px;
+		height: 50px;
 		-webkit-appearance: none;
 		appearance: none;
 	}
@@ -134,7 +134,7 @@
 	}
 
 	progress::-webkit-progress-value {
-		background-color: rgba(255,255,255,0.6);
+		background-color: rgba(2, 253, 253, 0.904)
 	}
 
 	video {
