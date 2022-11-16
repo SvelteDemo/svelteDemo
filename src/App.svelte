@@ -10,7 +10,7 @@
 <Router url="{url}">
   <nav>
   <div>
-    <Link to="/">Home</Link>
+    <Link to="/home">Home</Link>
   </div>
   <div>
    <Link to="kris">Pictures</Link>
@@ -23,7 +23,7 @@
   </div>
   </nav>
   <div>
-   <Route path="/"></Route>
+   <Route path="/home"></Route>
    <Route path="/kris" component="{KrisPage}" />
    <Route path="/three" component="{Three}" />
    <Route path="/video" component="{Video}" />
