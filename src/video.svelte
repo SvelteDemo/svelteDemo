@@ -33,6 +33,7 @@
 		if (new Date() - lastMouseDown < 300) {
 			if (paused) e.target.play();
 			else e.target.pause();
+			audioToggle();
 		}
 	}
 
@@ -52,16 +53,11 @@
 			audioPlay = true;
 		} else {
 			audio.pause();
-			audio.currentTime = 0;
 			audioPlay = false;
 		}
 	}
 
 </script>
-
-<h1>Music Sample</h1>
-	
-<button on:click={audioToggle}>{audioPlay ? `Stop Audio` : `Play Audio`}</button>
 
 <h1>Landscape Video</h1>
 
@@ -77,7 +73,11 @@
 		bind:duration
 		bind:paused>
 		<track kind="captions">
-	</video>
+		</video>
+
+<h3>Music Sample</h3>
+	
+<button on:click={audioToggle}>{audioPlay ? `Stop Audio` : `Play Audio`}</button>
 
 <div class="controls" style="opacity: {duration && showControls ? 1 : 0}">
 		<progress value="{(time / duration) || 0}"/>
@@ -90,6 +90,9 @@
 </div>
 
 <style>
+	body {
+		background-color: black;
+	}
 	div {
 		position: relative;
 	}

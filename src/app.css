@@ -30,6 +30,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #242424;
+  color:rgba(255, 255, 255, 0.87)
 }
 
 h1 {
@@ -73,9 +75,9 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #111dfd;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #fdf5f5;
   }
 }
