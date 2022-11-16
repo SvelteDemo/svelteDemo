@@ -51,6 +51,15 @@
           {/if}
         </div>
       {/each}
+      <div>
+        <Router url="{url}">
+          <nav>
+            <button class="home_button">
+              <Link to="/home" replace>Home</Link>
+            </button>
+          </nav>
+        </Router>
+      </div>
     </div>
 
     {#if selected}
@@ -68,13 +77,6 @@
         </div>
       {/await}
     {/if}
-    <Router url="{url}">
-      <nav>
-        <button class="home_button">
-          <Link to="/home" replace>Home</Link>
-        </button>
-      </nav>
-    </Router>
   </div>
 </div>
 
@@ -88,7 +90,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: #242424;
   }
 
   .phone {
@@ -165,6 +167,7 @@
   border: solid 1px black;
   margin: 10px;
   padding: 5px;
+  min-width: 200%;
 }
   .credit a,
   .credit a:visited {
