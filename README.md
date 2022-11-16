@@ -12,20 +12,21 @@
 #### Score (Out of 10): 7
 #### General Comments
 
-- ADD COMMENTS
+- This framework seems fairly easy to use.  It has a good selection of animations for UI features and 'binding' that lets children pass props to parents seems useful once you learn how to use it.
 
 #### Pros
 * Great documentation
-* Item 2
+* Very easy to import and use components
 
 #### Cons
-* Item 1
-* Item 2
+* Apparently doesn't have a large amount of support for plugins.
+  * Needed to import a router-library to be able to use routers in Svelte.
+* Have to relearn special syntax for some things (like onClick)
 
 ### Ratings and Reviews
 #### Documentation
 
-Thoughts go here
+Very easy to use documentation.  The docs themselves were fairly easy to read, and the examples are very well organized and easy to interact with.
 
 #### Systems Requirements
 
