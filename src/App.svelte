@@ -1,37 +1,29 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import Counter from './lib/Counter.svelte'
+
   import KrisPage from './kris.svelte';
+  import { Router, Route, Link } from "svelte-routing";
+  import Three from './three.svelte';
+  import Video from './video.svelte';
+  export let url = ""
 
 </script>
+<Router url="{url}">
+  <nav>
+   <Link to="/">Home</Link>
+   <Link to="kris">Pictures</Link>
+   <Link to="three">Rick</Link>
+   <Link to="video">Video/Audio</Link>
+  </nav>
+  <div>
+   <Route path="/"></Route>
+   <Route path="/kris" component="{KrisPage}" />
+   <Route path="/three" component="{Three}" />
+   <Route path="/video" component="{Video}" />
+  </div>
+</Router>
 
 <main>
-  <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer"> 
-      <img src="/vite.svg" class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer"> 
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
-
-  <div class="card">
-    <Counter />
-  </div>
-  <div class="kris_page">
-    <button>
-      Show Kris Page
-    </button>
-    <KrisPage />
-  </div>
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
+  <h1>Home Page</h1>
 </main>
 
 <style>
